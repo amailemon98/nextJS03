@@ -9,7 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      {/* 유틸리티 : 자기가 직접 색을 정해 넣을 수 있다! ( @tailwind utilities ) <= 다 불러온 것임 */}
+      <body className='bg-pink-300 sm:bg-purple-300 md:bg-green-200 lg:bg-yellow-300 xl:bg-blue-500' >
         <Navbars />
         {children}
       </body>

@@ -25,7 +25,7 @@ const Navbars = () => {
   return (
     <div>
         {
-            menus.map(menu => <Link href={`${menu.path}`}> {menu.title} </Link>) // 메뉴 만들기
+            menus.map(menu => <Link href={`${menu.path}`} key={menu.title} > {menu.title} </Link>) // 메뉴 만들기
         }
     </div>
   )
